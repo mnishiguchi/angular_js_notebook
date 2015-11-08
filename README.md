@@ -106,6 +106,34 @@ index.html
 - bind behavior to HTML elements
 - When the app runs, AngularJS walks through each HTML element looking for directives. When it finds one, AngularJS triggers that behavior.
 
+### Defining a new directive
+- We can write code to teach the browser a new HTML element
+
+js/directives/appInfo.js
+```js
+// Creating a new directive appInfo
+app.directive('appInfo', function() {
+  return {
+    restrict: 'E',  // Used as new HTML element
+    scope: {
+      info: '=',    // Look for an attribute named info in the appInfo element
+    },
+    // Specifies the HTML to use in order to display the data in scope.info
+    templateUrl: 'js/directives/appInfo.html'
+  };
+});
+
+```
+
+js/directives/appInfo.html
+```html
+<img class="icon" ng-src="{{ info.icon }}">
+<h2 class="title">{{ info.title }}</h2>
+<p class="developer">{{ info.developer }}</p>
+<p class="price">{{ info.price | currency }}</p>
+```
+
+
 ==
 
 ## Filter
@@ -149,4 +177,29 @@ app.controller('MainController', ['$scope', function($scope) {
     <p class="date">{{ product.pubdate | date }}</p>
   </div>
 </div>
+```
+
+```
+<table class="table">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>ROLL</th>
+      <th>SUBJECT</th>
+      <th>MARK</th>
+      <th>AGE</th>
+      <th>COUNTRY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="aStudent in studentList">
+      <td>{{ aStudent.name }}</td>
+      <td>{{ aStudent.roll }}</td>
+      <td>{{ aStudent.subject }}</td>
+      <td>{{ aStudent.mark }}</td>
+      <td>{{ aStudent.age }}</td>
+      <td>{{ aStudent.country }}</td>
+    </tr>
+  </tbody>
+</table>
 ```
