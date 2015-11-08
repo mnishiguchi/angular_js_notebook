@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="gemStore"><!-- boundd to gemStore -->
+  <head>
+    <!-- Include styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--
+    Attaching the controller
+    ng-controller="ControllerName as alias"
+    -->
+    <div ng-controller="StoreController as store" class="container">
+
+      <div ng-repeat="product in store.products">
+
+        <div ng-hide="product.soldOut" class="product row">
+          <h3>
+            {{ product.name }}
+            <em class="pull-right">${{ product.price }}</em>
+          </h3>
+          <p> {{ product.description }} </p>
+
+          <!-- Only displayed when canPurcase is true -->
+          <button ng-show="store.product.canPurchase"> Add to cart </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Include AngularJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <!-- Include Modules -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

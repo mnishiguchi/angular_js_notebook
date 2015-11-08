@@ -1,0 +1,23 @@
+/*
+Adopted from https://www.codecademy.com/en/courses/learn-angularjs
+*/
+html, body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+}
+
+.itemCard {
+   border: 1px red solid;
+   position: relative;
+   padding: 50px;
+   border-radius: 0;
+   margin-bottom:50px;
+}
+
+.itemCard img {
+   margin-top: 10px;
+   margin-bottom: 30px;
+   max-width: 100%;
+}

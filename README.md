@@ -1,18 +1,112 @@
 # AngularJS notebook
 
 ## Resources
-- https://www.codecademy.com/en/courses/learn-angularjs
+- [Code Academy](https://www.codecademy.com/en/courses/learn-angularjs)
+- [Code School](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
+- [AngularJS's tutorial - あなたとともにAngularJS](http://lab.hisasann.com/AngularJSTutorial/)
 
-## App
+==
 
+## Creating a module
+
+app.js
 ```js
+/* angular: AngularJS
+ * "...":   App name
+ * [...]:   Dependencies (other libraries)
+ */
 var app = angular.module("myApp", []);
 ```
 
+==
+
+## Including the modules
+
+index.html
+```html
+<!doctype html>
+<html ng-app="myApp"><!-- booud to myApp -->
+  <head>
+    <!-- Include styles -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- Some page content -->
+ 
+    <!-- Include AngularJS -->
+    <script type="text/javascript" src="angular.min.js"></script>
+    <!-- Include Modules -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- Include Controllers -->
+    <script type="text/javascript" src="js/controllers/MainController.js"></script>
+  </body>
+</html>
+```
+
+==
+
+## Expressions
+- https://docs.angularjs.org/guide/expression
+
+```html
+<h1>{{ "Hello, " + "Angular!" }}</h1>
+```
+
+==
+
+## Controllers
+- Define our app's behavior by defining functions and values
+- Wrap your JavaScript code in a closure (good practice)
+- Controller is attached to our app
+
+```js
+// Wrappint our JavaScript in a closure is a good habit
+(function() {
+
+  var app = angular.module("store", []);
+  app.controller("StoreController", function() {
+    this.product = gem;
+  });
+
+  var gem = {
+    name:  "Dodecahedron",
+    price: 2.95,
+    description: "Dodekai hedoro"
+  }
+
+})();
+```
+
+==
+
+## Attaching the controller to an HTML element
+- Scope of the controller is only inside of the specified element
+
+index.html
+```html
+  <body>
+    <!--
+    Attaching the controller
+    ng-controller="ControllerName as alias"
+    -->
+    <div ng-controller="StoreController as store">
+      <h1> Product name </h1>
+      <h2> $Product price </h2>
+      <p>  Product description </p>
+    </div>
+    ...
+```
+
+==
+
 ## Directives
-- ng-app, ng-controller, ng-repeat, ng-src, ng-click, ...
+- ng-app, ng-controller, ng-repeat, ng-src, ng-click, ng-show, ng-hide...
 - bind behavior to HTML elements
 - When the app runs, AngularJS walks through each HTML element looking for directives. When it finds one, AngularJS triggers that behavior.
+
+==
 
 ## Filter
 ```
@@ -21,22 +115,24 @@ var app = angular.module("myApp", []);
 <p class="date">{{ product.pubdate | date }}</p>
 ```
 
+==
+
 ## ng-repeat
 ```
 app.controller('MainController', ['$scope', function($scope) {
   //...
   $scope.products = [
       {
-        name: 'The Book of Trees',
-        price: 19,
-        pubdate: new Date('2014', '03', '08'),
-        cover: 'img/the-book-of-trees.jpg'
+        name:    "The Book of Trees",
+        price:   19,
+        pubdate: new Date("2014", "03", "08"),
+        cover:   "img/the-book-of-trees.jpg"
       },
       {
-        name: 'Program or be Programmed',
-        price: 8,
-        pubdate: new Date('2013', '08', '01'),
-        cover: 'img/program-or-be-programmed.jpg'
+        name:    "Program or be Programmed",
+        price:   8,
+        pubdate: new Date("2013", "08", "01"),
+        cover:   "img/program-or-be-programmed.jpg"
       },
       //...
     ]
