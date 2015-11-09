@@ -9,6 +9,11 @@
 - [AngularJSはWebサイトのテンプレートエンジンとしてだけ見てもなかなか使える](http://deerest.co/2015/05/12/angular-template/)
 - [AngularJSでHTMLを分割するのにお手軽なng-include](http://angularjsninja.com/blog/2013/11/19/angularjs-nginclude/)
 
+### XMLHttpRequest cannot load in angularjs
+- To make a cross domain request using XMLHttpRequest, the web server responding to the request needs to have the Access-Control-Allow-Origin response header set to *.
+- [AngularJS Error: Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, https](http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes)
+- [Making Angular's $http work with Request.IsAjaxRequest() | Encosia](http://encosia.com/making-angulars-http-work-with-request-isajaxrequest/)
+
 ==
 
 ## Converting XML into JSON
@@ -63,3 +68,7 @@ var d = new Date();
 var date = d.toISOString();  //=> "2015-11-08T19:45:39.390Z"
 ```
 
+==
+
+## Setting headers for $http
+- http://www.angulartutorial.net/2014/05/set-headers-for-all-http-calls-in.html

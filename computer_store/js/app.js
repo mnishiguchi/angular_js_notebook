@@ -1,4 +1,4 @@
-var app = angular.module( 'myApp', [] )
+var app = angular.module( 'myApp', [] );
 app.controller( 'MainController', function( $scope, $http ) {
 
     var pendingTask;
@@ -20,16 +20,24 @@ app.controller( 'MainController', function( $scope, $http ) {
 
       // http://docs.aws.amazon.com/AWSECommerceService/latest/DG/ItemSearch.html
 
-      var searchURL =
-        "http://ecs.amazonaws.com/onca/xml?Service=AWSECommerceService"
-        + "&AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=%22mnishiguchi-20%22"
-        + "&Keywords=laptop"
-        + "&Operation=ItemSearch"
-        + "&SearchIndex=Electronics"
-        + "&Service=AWSECommerceService"
-        + "&Timestamp=" + new Date().toISOString()
-        + "&Signature=rtb9xcLKvPzRp0KbgicvH5XN+qxp3eMksACvoolu8Y8"
-      $http.get("http://ecs.amazonaws.com/onca/xml?AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=%22mnishiguchi-20%22&Keywords=laptop&Operation=ItemSearch&SearchIndex=Electronics&Service=AWSECommerceService&Timestamp=2015-11-09T13%3A53%3A21.000Z&Version=2011-08-01&Signature=rtb9xcLKvPzRp0KbgicvH5XN%2Bqxp3eMksACvoolu8Y8%3D")
+      // sample url for videos - working
+      // $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
+
+      // var url =
+      //   "http://ecs.amazonaws.com/onca/xml?Service=AWSECommerceService"
+      //   + "&AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=%22mnishiguchi-20%22"
+      //   + "&Keywords=laptop"
+      //   + "&Operation=ItemSearch"
+      //   + "&SearchIndex=Electronics"
+      //   + "&Service=AWSECommerceService"
+      //   + "&Timestamp=" + new Date().toISOString()
+      //   + "&Signature=rtb9xcLKvPzRp0KbgicvH5XN+qxp3eMksACvoolu8Y8"
+
+      // { headers: { 'Access-Control-Allow-Origin: *' } })
+      // $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
+      var url = "http://ecs.amazonaws.com/onca/xml?AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=mnishiguchi-20&Keywords=harry%20potter&Operation=ItemSearch&SearchIndex=Books&Service=AWSECommerceService&Timestamp=2015-11-09T16%3A36%3A40.000Z&Version=2011-08-01&Signature=OWjEXLiT6euGLqzTsALQkcfL3Pz%2FTi7llDuGRhihee0%3D";
+
+      $http.get(url)
         .success(function(response) {
 
             $scope.details = response;
@@ -39,8 +47,6 @@ app.controller( 'MainController', function( $scope, $http ) {
             alert("fetch fail");
         });
     }
-
-
 
     // $scope.update = function(product) {
     //   $scope.search = product.Title;
