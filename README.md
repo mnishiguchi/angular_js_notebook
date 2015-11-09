@@ -133,11 +133,10 @@ js/directives/appInfo.html
 <p class="price">{{ info.price | currency }}</p>
 ```
 
-
 ==
 
 ## Filter
-```
+```html
 <p class="title">{{ product.name | uppercase }}</p>
 <p class="price">{{ product.price | currency }} </p>
 <p class="date">{{ product.pubdate | date }}</p>
@@ -146,7 +145,9 @@ js/directives/appInfo.html
 ==
 
 ## ng-repeat
-```
+
+E.g. Arrays of objects
+```js
 app.controller('MainController', ['$scope', function($scope) {
   //...
   $scope.products = [
@@ -168,7 +169,7 @@ app.controller('MainController', ['$scope', function($scope) {
 }]);
 ```
 
-```
+```html
 <div ng-repeat="product in products" class="col-md-6">
   <div class="thumbnail">
     <img ng-src="{{ product.cover }}">
@@ -179,7 +180,8 @@ app.controller('MainController', ['$scope', function($scope) {
 </div>
 ```
 
-```
+E.g. Tables
+```html
 <table class="table">
   <thead>
     <tr>
@@ -203,3 +205,17 @@ app.controller('MainController', ['$scope', function($scope) {
   </tbody>
 </table>
 ```
+
+E.g. Custom directives
+```html
+<div class="main" ng-controller="MainController">
+  <div class="container">
+     <div class="card" ng-repeat="app in apps">
+      <app-info info="app"></app-info>
+      <install-app></install-app>
+    </div>
+  </div>
+</div>
+```
+
+
