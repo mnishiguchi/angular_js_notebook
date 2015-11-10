@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
   <head>
     <title>Print geonames</title>
@@ -15,10 +15,12 @@
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
-  <body ng-app="myApp" ng-controller="MainController">
+  <body ng-controller="MainCtrl">
     <div class="container-fluid">
 
       <!-- Navbar -->
+      <!-- <div ng-include src="'top-navbar.html'"></div> -->
+
       <top-navbar></top-navbar>
 
       <noscript>

@@ -106,45 +106,15 @@ index.html
 - bind behavior to HTML elements
 - When the app runs, AngularJS walks through each HTML element looking for directives. When it finds one, AngularJS triggers that behavior.
 
-### Defining a new directive
-- We can write code to teach the browser a new HTML element
+### [ng-include](https://docs.angularjs.org/api/ng/directive/ngInclude)
+- Note:  wrap the path in single quotes: `src="'partials/structure/header.html'"`
+- [Simple ng-include not working](http://stackoverflow.com/questions/22991658/simple-ng-include-not-working)
 
-js/directives/appInfo.js
-```js
-// Creating a new directive appInfo
-app.directive('appInfo', function() {
-  return {
-    restrict: 'E',  // Used as new HTML element
-    scope: {
-      info: '=',    // Look for an attribute named info in the appInfo element
-    },
-    // Specifies the HTML to use in order to display the data in scope.info
-    templateUrl: 'js/directives/appInfo.html'
-  };
-});
-
-```
-
-js/directives/appInfo.html
 ```html
-<img class="icon" ng-src="{{ info.icon }}">
-<h2 class="title">{{ info.title }}</h2>
-<p class="developer">{{ info.developer }}</p>
-<p class="price">{{ info.price | currency }}</p>
+<div ng-include src="'top-navbar.html'"></div>
 ```
 
-==
-
-## Filter
-```html
-<p class="title">{{ product.name | uppercase }}</p>
-<p class="price">{{ product.price | currency }} </p>
-<p class="date">{{ product.pubdate | date }}</p>
-```
-
-==
-
-## ng-repeat
+### ng-repeat
 
 E.g. Arrays of objects
 ```js
@@ -218,4 +188,54 @@ E.g. Custom directives
 </div>
 ```
 
+==
 
+## Defining a custom directive
+- We can write code to teach the browser a new HTML element
+
+js/app.js
+```js
+//...
+app.directive('appInfo', function() { // Creating a new directive appInfo
+  return {
+    restrict: 'E',  // Used as new HTML element
+    scope: {
+      info: '=',    // Look for an attribute named info in the appInfo element
+    },
+    // Specifies the HTML to use in order to display the data in scope.info
+    templateUrl: 'appInfo.html'
+  };
+});
+
+```
+
+js/directives/appInfo.html
+```html
+<img class="icon" ng-src="{{ info.icon }}">
+<h2 class="title">{{ info.title }}</h2>
+<p class="developer">{{ info.developer }}</p>
+<p class="price">{{ info.price | currency }}</p>
+```
+
+index.html
+```html
+<div class="main" ng-controller="MainController">
+  <div class="container">
+     <div class="card" ng-repeat="app in apps">
+      <app-info info="app"></app-info>
+      <install-app></install-app>
+    </div>
+  </div>
+</div>
+```
+
+==
+
+## Filter
+```html
+<p class="title">{{ product.name | uppercase }}</p>
+<p class="price">{{ product.price | currency }} </p>
+<p class="date">{{ product.pubdate | date }}</p>
+```
+
+==
