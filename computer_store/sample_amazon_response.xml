@@ -1,0 +1,616 @@
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+<OperationRequest>
+<HTTPHeaders>
+<Header Name="UserAgent" Value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"/>
+</HTTPHeaders>
+<RequestId>711011eb-3764-4ac6-b027-63e5f399ccdb</RequestId>
+<Arguments>
+<Argument Name="AWSAccessKeyId" Value="AKIAIEKR4D2NCZL7PX7Q"/>
+<Argument Name="AssociateTag" Value="mnishiguchi-20"/>
+<Argument Name="Keywords" Value="ruby rails"/>
+<Argument Name="Operation" Value="ItemSearch"/>
+<Argument Name="SearchIndex" Value="Books"/>
+<Argument Name="Service" Value="AWSECommerceService"/>
+<Argument Name="Timestamp" Value="2015-11-11T23:48:01.000Z"/>
+<Argument Name="Version" Value="2011-08-01"/>
+<Argument Name="Signature" Value="sVLvlvp1hpxgNdy/p8bQYu+WNlyzCjSlNoDO9CsRtnE="/>
+</Arguments>
+<RequestProcessingTime>0.2639360000000000</RequestProcessingTime>
+</OperationRequest>
+<Items>
+<Request>
+<IsValid>True</IsValid>
+<ItemSearchRequest>
+<Keywords>ruby rails</Keywords>
+<ResponseGroup>Small</ResponseGroup>
+<SearchIndex>Books</SearchIndex>
+</ItemSearchRequest>
+</Request>
+<TotalResults>960</TotalResults>
+<TotalPages>96</TotalPages>
+<MoreSearchResultsUrl>
+http://www.amazon.com/gp/redirect.html?linkCode=xm2&SubscriptionId=AKIAIEKR4D2NCZL7PX7Q&location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Druby%2Brails%26url%3Dsearch-alias%253Dstripbooks&tag=mnishiguchi-20&creative=386001&camp=2025
+</MoreSearchResultsUrl>
+<Item>
+<ASIN>0134077709</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Ruby-Rails-Tutorial-Addison-Wesley-Professional/dp/0134077709%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0134077709
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Ruby-Rails-Tutorial-Addison-Wesley-Professional/dp/tech-data/0134077709%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0134077709%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0134077709%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0134077709%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/0134077709%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/0134077709%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/0134077709%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0134077709
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Michael Hartl</Author>
+<Manufacturer>Addison-Wesley Professional</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+Ruby on Rails Tutorial: Learn Web Development with Rails (3rd Edition) (Addison-Wesley Professional Ruby)
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>0321944275</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Rails-Edition-Addison-Wesley-Professional-Ruby/dp/0321944275%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0321944275
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Rails-Edition-Addison-Wesley-Professional-Ruby/dp/tech-data/0321944275%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0321944275%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0321944275%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0321944275%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/0321944275%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/0321944275%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/0321944275%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321944275
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Obie Fernandez</Author>
+<Author>Kevin Faustino</Author>
+<Manufacturer>Addison-Wesley Professional</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+The Rails 4 Way (3rd Edition) (Addison-Wesley Professional Ruby)
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>0692364218</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Learn-Ruby-Rails-For-Development/dp/0692364218%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0692364218
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Learn-Ruby-Rails-For-Development/dp/tech-data/0692364218%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0692364218%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0692364218%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0692364218%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/0692364218%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/0692364218%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/0692364218%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0692364218
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>John Elder</Author>
+<Manufacturer>Codemy.com</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+Learn Ruby On Rails For Web Development: Learn Rails The Fast And Easy Way!
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>1937785564</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Agile-Development-Rails-Facets-Ruby/dp/1937785564%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1937785564
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Agile-Development-Rails-Facets-Ruby/dp/tech-data/1937785564%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1937785564%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1937785564%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1937785564%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/1937785564%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/1937785564%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/1937785564%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1937785564
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Sam Ruby</Author>
+<Author>Dave Thomas</Author>
+<Author>David Heinemeier Hansson</Author>
+<Manufacturer>Pragmatic Bookshelf</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+Agile Web Development with Rails 4 (Facets of Ruby)
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>1491910852</ASIN>
+<DetailPageURL>
+http://www.amazon.com/RESTful-Rails-Development-Building-Applications/dp/1491910852%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1491910852
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/RESTful-Rails-Development-Building-Applications/dp/tech-data/1491910852%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1491910852%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1491910852%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1491910852%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/1491910852%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/1491910852%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/1491910852%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1491910852
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Silvia Puglisi</Author>
+<Manufacturer>O'Reilly Media</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+RESTful Rails Development: Building Open Applications and Services
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>B00QK2T1SY</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Learn-Ruby-Rails-Capstone-Tutorials-ebook/dp/B00QK2T1SY%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00QK2T1SY
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Learn-Ruby-Rails-Capstone-Tutorials-ebook/dp/tech-data/B00QK2T1SY%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00QK2T1SY%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00QK2T1SY%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00QK2T1SY%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/B00QK2T1SY%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/B00QK2T1SY%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/B00QK2T1SY%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00QK2T1SY
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Daniel Kehoe</Author>
+<Manufacturer>RailsApps</Manufacturer>
+<ProductGroup>eBooks</ProductGroup>
+<Title>Learn Ruby on Rails (Capstone Tutorials Book 1)</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>1518721648</ASIN>
+<DetailPageURL>
+http://www.amazon.com/RUBY-Beginners-Crash-Course-Programming/dp/1518721648%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1518721648
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/RUBY-Beginners-Crash-Course-Programming/dp/tech-data/1518721648%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1518721648%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1518721648%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1518721648%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/1518721648%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/1518721648%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/1518721648%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1518721648
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Quick Start Guides</Author>
+<Manufacturer>CreateSpace Independent Publishing Platform</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+RUBY Beginner's Crash Course: Ruby for Beginner's Guide to Ruby Programming, Ruby On Rails & Rails Programming (Ruby, Operating Systems, Programming) (Volume 1)
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>1617291099</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Rails-Action-Revised-Edition/dp/1617291099%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1617291099
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Rails-Action-Revised-Edition/dp/tech-data/1617291099%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1617291099%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1617291099%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1617291099%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/1617291099%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/1617291099%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/1617291099%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1617291099
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Ryan Bigg</Author>
+<Author>Yehuda Katz</Author>
+<Author>Steve Klabnik</Author>
+<Author>Rebecca Skinner</Author>
+<Manufacturer>Manning Publications</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+Rails 4 in Action: Revised Edition of Rails 3 in Action
+</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>B00YPU5MGS</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Ruby-Rails-Autodidacts-Stefan-Wintermeyer-ebook/dp/B00YPU5MGS%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00YPU5MGS
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Ruby-Rails-Autodidacts-Stefan-Wintermeyer-ebook/dp/tech-data/B00YPU5MGS%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00YPU5MGS%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00YPU5MGS%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00YPU5MGS%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/B00YPU5MGS%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/B00YPU5MGS%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/B00YPU5MGS%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00YPU5MGS
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Stefan Wintermeyer</Author>
+<ProductGroup>eBooks</ProductGroup>
+<Title>Ruby on Rails 4.2 for Autodidacts</Title>
+</ItemAttributes>
+</Item>
+<Item>
+<ASIN>0321832051</ASIN>
+<DetailPageURL>
+http://www.amazon.com/Ruby-Rails-Tutorial-Addison-Wesley-Professional/dp/0321832051%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0321832051
+</DetailPageURL>
+<ItemLinks>
+<ItemLink>
+<Description>Technical Details</Description>
+<URL>
+http://www.amazon.com/Ruby-Rails-Tutorial-Addison-Wesley-Professional/dp/tech-data/0321832051%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Baby Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0321832051%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wedding Registry</Description>
+<URL>
+http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0321832051%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Add To Wishlist</Description>
+<URL>
+http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0321832051%26SubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>Tell A Friend</Description>
+<URL>
+http://www.amazon.com/gp/pdp/taf/0321832051%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Customer Reviews</Description>
+<URL>
+http://www.amazon.com/review/product/0321832051%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+<ItemLink>
+<Description>All Offers</Description>
+<URL>
+http://www.amazon.com/gp/offer-listing/0321832051%3FSubscriptionId%3DAKIAIEKR4D2NCZL7PX7Q%26tag%3Dmnishiguchi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0321832051
+</URL>
+</ItemLink>
+</ItemLinks>
+<ItemAttributes>
+<Author>Michael Hartl</Author>
+<Manufacturer>Addison-Wesley Professional</Manufacturer>
+<ProductGroup>Book</ProductGroup>
+<Title>
+Ruby on Rails Tutorial: Learn Web Development with Rails (2nd Edition) (Addison-Wesley Professional Ruby)
+</Title>
+</ItemAttributes>
+</Item>
+</Items>
+</ItemSearchResponse>

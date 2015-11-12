@@ -13,6 +13,12 @@
 - To make a cross domain request using XMLHttpRequest, the web server responding to the request needs to have the Access-Control-Allow-Origin response header set to *.
 - [AngularJS Error: Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, https](http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes)
 - [Making Angular's $http work with Request.IsAjaxRequest() | Encosia](http://encosia.com/making-angulars-http-work-with-request-isajaxrequest/)
+- [HTTP access control (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+
+==
+
+## Setting headers for $http
+- http://www.angulartutorial.net/2014/05/set-headers-for-all-http-calls-in.html
 
 ==
 
@@ -69,6 +75,3 @@ var date = d.toISOString();  //=> "2015-11-08T19:45:39.390Z"
 ```
 
 ==
-
-## Setting headers for $http
-- http://www.angulartutorial.net/2014/05/set-headers-for-all-http-calls-in.html

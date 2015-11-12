@@ -1,5 +1,15 @@
 # AngularJS notebook
 
+## Local server
+- [http-server](https://www.npmjs.com/package/http-server)
+
+```
+$ cd project_dir/
+$ http-server -o
+```
+
+==
+
 ## Resources
 - [Code Academy](https://www.codecademy.com/en/courses/learn-angularjs)
 - [Code School](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
@@ -101,7 +111,7 @@ index.html
 
 ==
 
-## Directives
+## [Directives](https://docs.angularjs.org/guide/directive)
 - ng-app, ng-controller, ng-repeat, ng-src, ng-click, ng-show, ng-hide...
 - bind behavior to HTML elements
 - When the app runs, AngularJS walks through each HTML element looking for directives. When it finds one, AngularJS triggers that behavior.
@@ -231,7 +241,16 @@ index.html
 
 ==
 
-## Filter
+## Formatting with filters
+- syntax:  `{{ data | filter:options }}`
+- date:
+  +  `{{ '1388123412323' | date: 'MM/dd/yyyy @ h:mma' }}`
+- uppercase & lowercase
+  + `{{ 'octagon gem' | uppercase }}`
+- limitTo:
+  + `{{ 'My description' | limitTo:8 }}  <!--first 8 chars-->`
+  + `<li ng-repeat="product in store.products" | limitTo:3 }}  <!--first 3 items-->`
+
 ```html
 <p class="title">{{ product.name | uppercase }}</p>
 <p class="price">{{ product.price | currency }} </p>
