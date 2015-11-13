@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="gemStore"><!-- boundd to gemStore -->
+<html ng-app="gemStore"><!-- bound to gemStore -->
   <head>
     <!-- Include styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -13,18 +13,35 @@
     ng-controller="ControllerName as alias"
     -->
     <div ng-controller="StoreController as store" class="container">
-
-      <div ng-repeat="product in store.products">
-
-        <div ng-hide="product.soldOut" class="product row">
+      <!--  Products Container  -->
+      <div ng-repeat="product in store.products" class="list-group-item">
+        <!--  Product Container  -->
+        <div ng-hide="product.soldOut" class="list-group-item">
           <h3>
             {{ product.name }}
-            <em class="pull-right">${{ product.price }}</em>
+            <em class="pull-right"> {{ product.price | currency }} </em>
           </h3>
+          <!-- Image Gallery  -->
+          <ul class="img-thumbnails clearfix">
+            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+              <img ng-src="image" />
+            </li>
+          </ul>
           <p> {{ product.description }} </p>
 
           <!-- Only displayed when canPurcase is true -->
           <button ng-show="store.product.canPurchase"> Add to cart </button>
+
+          <!-- Tabs -->
+          <section>
+            <ul class="nav nav-pills">
+                <li><a href ng-click="tab = 1"></a>Description</li>
+                <li><a href ng-click="tab = 2"></a>Specifications</li>
+                <li><a href ng-click="tab = 3"></a>Reviews</li>
+            </ul>
+            {{ tab }}
+          </section>
+
         </div>
       </div>
 

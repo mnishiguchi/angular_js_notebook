@@ -1,5 +1,14 @@
 # AngularJS notebook
 
+## Some resources
+- [Code Academy](https://www.codecademy.com/en/courses/learn-angularjs)
+- [Code School](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
+- [AngularJS's tutorial - あなたとともにAngularJS](http://lab.hisasann.com/AngularJSTutorial/)
+- [AngularJSはWebサイトのテンプレートエンジンとしてだけ見てもなかなか使える](http://deerest.co/2015/05/12/angular-template/)
+- [AngularJSでHTMLを分割するのにお手軽なng-include](http://angularjsninja.com/blog/2013/11/19/angularjs-nginclude/)
+
+==
+
 ## Local server
 - [http-server](https://www.npmjs.com/package/http-server)
 
@@ -7,13 +16,6 @@
 $ cd project_dir/
 $ http-server -o
 ```
-
-==
-
-## Resources
-- [Code Academy](https://www.codecademy.com/en/courses/learn-angularjs)
-- [Code School](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
-- [AngularJS's tutorial - あなたとともにAngularJS](http://lab.hisasann.com/AngularJSTutorial/)
 
 ==
 
@@ -186,17 +188,17 @@ E.g. Tables
 </table>
 ```
 
-E.g. Custom directives
+### [ng-show](https://docs.angularjs.org/api/ng/directive/ngShow)
 ```html
-<div class="main" ng-controller="MainController">
-  <div class="container">
-     <div class="card" ng-repeat="app in apps">
-      <app-info info="app"></app-info>
-      <install-app></install-app>
-    </div>
-  </div>
+<!-- Image Gallery  -->
+<div class="gallery" ng-show="{{ product.images.length !== 0 }}">
+  <img class="img img-circle img-thumbnail center-block" ng-src="{{product.images[0]}}" />
+  <ul class="clearfix">
+    <li class="small-image pull-left thumbnail" ng-repeat="image in product.images"> <img ng-src="{{ image }}" /> </li>
+  </ul>
 </div>
 ```
+
 
 ==
 
@@ -244,12 +246,13 @@ index.html
 ## Formatting with filters
 - syntax:  `{{ data | filter:options }}`
 - date:
-  +  `{{ '1388123412323' | date: 'MM/dd/yyyy @ h:mma' }}`
+  + `{{ '1388123412323' | date: 'MM/dd/yyyy @ h:mma' }}`
 - uppercase & lowercase
   + `{{ 'octagon gem' | uppercase }}`
 - limitTo:
   + `{{ 'My description' | limitTo:8 }}  <!--first 8 chars-->`
-  + `<li ng-repeat="product in store.products" | limitTo:3 }}  <!--first 3 items-->`
+  + `<li ng-repeat="product in store.products" | limitTo:3">...</li>`
+  + `<li ng-repeat="product in store.products" | orderBy:'-price'">...</li>`
 
 ```html
 <p class="title">{{ product.name | uppercase }}</p>
@@ -258,3 +261,4 @@ index.html
 ```
 
 ==
+

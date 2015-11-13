@@ -1,5 +1,13 @@
 var app = angular.module( 'myApp', [] );
 
+// app.config(function($httpProvider) {
+//     //Enable cross domain calls
+//     $httpProvider.defaults.useXDomain = true;
+
+//     //Remove the header used to identify ajax call  that would prevent CORS from working
+//     delete $httpProvider.defaults.headers.common['X-Requested-With'];
+// });
+
 app.controller( 'MainController', function( $scope, $http ) {
 
     var pendingTask;
@@ -24,33 +32,35 @@ app.controller( 'MainController', function( $scope, $http ) {
       // sample url for videos - working
       // $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
 
-      // var url =
-      //   "http://ecs.amazonaws.com/onca/xml?Service=AWSECommerceService"
-      //   + "&AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=%22mnishiguchi-20%22"
-      //   + "&Keywords=laptop"
-      //   + "&Operation=ItemSearch"
-      //   + "&SearchIndex=Electronics"
-      //   + "&Service=AWSECommerceService"
-      //   + "&Timestamp=" + new Date().toISOString()
-      //   + "&Signature=rtb9xcLKvPzRp0KbgicvH5XN+qxp3eMksACvoolu8Y8"
+      // var url = 'http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q'
+      // + '&AssociateTag=%22mnishiguchi-20%22'
+      // + '&Keywords=' + 'harry%20potter'
+      // + '&Operation=ItemSearch'
+      // + '&SearchIndex=Books'
+      // + '&Service=AWSECommerceService'
+      // + '&Timestamp=' + '2015-11-12T00%3A39%3A37.000Z' //  + new Date().toISOString()
+      // + '&Version=2011-08-01'
+      // + '&Signature=' + 'LFjNUVPVriac3Fnq%2BcwW%2Bg%2BN2Q9qBc962YxnwEEzK4I%3D';
 
-      $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
-      // var url = "http://ecs.amazonaws.com/onca/xml?AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=PutYourAssociateTagHere&Keywords=harry%20potter&Operation=ItemSearch&SearchIndex=Books&Service=AWSECommerceService&Timestamp=2015-11-12T00%3A39%3A37.000Z&Version=2011-08-01&Signature=LFjNUVPVriac3Fnq%2BcwW%2Bg%2BN2Q9qBc962YxnwEEzK4I%3D";
-      // $http.get(url, {
-      //     headers: {
-      //       'Access-Control-Allow-Origin': '*',
-      //       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      //       'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With',
-      //       'X-Requested-With': 'XMLHttpRequest'
-      //     }
-      //   })
+      /*
+      Access-Control-Allow-Headers: Content-Type
+      Access-Control-Allow-Methods: GET, POST, OPTIONS
+      Access-Control-Allow-Origin: *
+      */
+
+      //$http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
+      var url = "http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAIEKR4D2NCZL7PX7Q&AssociateTag=PutYourAssociateTagHere&Keywords=harry%20potter&Operation=ItemSearch&SearchIndex=Books&Service=AWSECommerceService&Timestamp=2015-11-12T00%3A39%3A37.000Z&Version=2011-08-01&Signature=LFjNUVPVriac3Fnq%2BcwW%2Bg%2BN2Q9qBc962YxnwEEzK4I%3D";
+      $http.get(url, {
+          headers: {
+            'X-Requested-With' : 'XMLHttpRequest'
+          }
+        })
+      // $http.get(url)
         .success(function(response) {
             $scope.details = response;
             alert("fetch success");
-        })
-        .error(function(data, status, headers, config) {
+        }).error(function(data, status, headers, config) {
             alert("fetch fail");
         });
     }
   });
-

@@ -5,15 +5,13 @@
 
 ==
 
-## Angular resources
-- [AngularJSはWebサイトのテンプレートエンジンとしてだけ見てもなかなか使える](http://deerest.co/2015/05/12/angular-template/)
-- [AngularJSでHTMLを分割するのにお手軽なng-include](http://angularjsninja.com/blog/2013/11/19/angularjs-nginclude/)
-
-### XMLHttpRequest cannot load in angularjs
+## XMLHttpRequest cannot load in angularjs
 - To make a cross domain request using XMLHttpRequest, the web server responding to the request needs to have the Access-Control-Allow-Origin response header set to *.
 - [AngularJS Error: Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, https](http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes)
 - [Making Angular's $http work with Request.IsAjaxRequest() | Encosia](http://encosia.com/making-angulars-http-work-with-request-isajaxrequest/)
 - [HTTP access control (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+- http://enable-cors.org/
+- http://samurails.com/tutorial/cors-with-angular-js-and-sinatra/
 
 ==
 
@@ -26,6 +24,7 @@
 - https://code.google.com/p/x2js/
 - [Convert XML to JSON In Angular JS](https://dzone.com/articles/convert-xml-to-json-in-angular-js)
 - http://www.xml.com/pub/a/2006/05/31/converting-between-xml-and-json.html
+- http://stackoverflow.com/questions/20369377/how-to-use-http-get-in-angularjs-correctly-in-specific-for-an-external-api-cal
 
 ==
 
@@ -61,6 +60,13 @@ http://ecs.amazonaws.com/onca/xml?Service=AWSECommerceService
 - [Amazon Signature Version 4 Calculation](http://stackoverflow.com/questions/24459018/amazon-signature-version-4-calculation)
 - [アマゾンのAPIを使って得た本の情報をGASのSpreadsheetに保存してみる - Qiita](http://qiita.com/yooo_gooo/items/4c94b5914fcf9e8b3910)
 - [「Amazon API」の使い方を紹介 － リクエストURL作成の概要](http://www.panzee.biz/archives/6247)
+- [Issue #326 · aws/aws-sdk-js](https://github.com/aws/aws-sdk-js/issues/326)
+https://github.com/aws/aws-sdk-js/issues/326
+amazon-api-gateway-cors/
+- http://dev.classmethod.jp/cloud/aws/amazon-api-gateway-cors/
+- http://stackoverflow.com/questions/32899439/aws-api-gateway-with-angular
+
+
 
 ==
 
