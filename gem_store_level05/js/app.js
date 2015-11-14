@@ -1,9 +1,13 @@
 (function() {
+
   var app = angular.module('gemStore', []);
 
   function StoreController() {
     // A collection of products, initially set to data fetched from an API
-    this.products = gems;
+    var store = this;
+    store.products = [];    // Initialize the store
+
+    store.products = data;  // Get data from API
   }
 
   app.controller('StoreController', StoreController);
@@ -13,7 +17,9 @@
   app.directive('productTitle', function() {
     return {
       restrict: 'E',
-      templateUrl: 'product-title'
+      template: '<h3>{{ product.name }}' +
+                  '<em class="pull-right">{{ product.price | currency }}</em>' +
+                '</h3>'
     };
   });
 
@@ -58,9 +64,6 @@
 
   app.directive('productReviewForm', function() {
     return {
-      bindToController: {
-        product: '='
-      },
       restrict: 'E',
       templateUrl: 'product-review-form',
       controller: function() {
@@ -68,7 +71,7 @@
         this.review = {}; // Bound to the fields
 
         // Called when user submits the review
-        this.addReview = function(product){
+        this.addReview = function(product) {
           product.reviews.push(this.review);  // Add the review
           this.review = {};                   // Clear the fields
         };
@@ -78,7 +81,7 @@
   });
 
   // Represents hypothetical data fetched from an API
-  var gems = [
+  var data = [
     {
       name: 'Azurite',
       description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
