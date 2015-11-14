@@ -20,7 +20,6 @@ $ http-server -o
 ==
 
 ## Creating a module
-
 app.js
 ```js
 /* angular: AngularJS
@@ -33,7 +32,6 @@ var app = angular.module("myApp", []);
 ==
 
 ## Including the modules
-
 index.html
 ```html
 <!doctype html>
@@ -202,33 +200,99 @@ E.g. Tables
 
 ==
 
-## Defining a custom directive
-- We can write code to teach the browser a new HTML element
+## Defining custom directives
+- Define a custom tag or attribute that is expanded or replaced
+- Can include Controller logic, if needed
+- Can be used for:
+  - expressing complex uI
+  - calling events and registering event handlers
+  - reusing common components 
+
+### Element directive 
+
+index.html
+```html
+<!--  Description Tab's Content  -->
+<product-description ng-show="tab.isSet(1)"></product-description>
+```
+
+product-description.html
+```html
+<div>
+  <h4>Description</h4>
+  <blockquote>{{ product.description }}</blockquote>
+</div>
+```
 
 js/app.js
+
 ```js
-//...
-app.directive('appInfo', function() { // Creating a new directive appInfo
-  return {
-    restrict: 'E',  // Used as new HTML element
-    scope: {
-      info: '=',    // Look for an attribute named info in the appInfo element
-    },
-    // Specifies the HTML to use in order to display the data in scope.info
-    templateUrl: 'appInfo.html'
-  };
-});
-
+  // Note: dash in HTML translates to camelCase in JS
+  app.directive("productDescription", function() {  // Creating a new directive
+    // Return a configuration object defining how our directive will work
+    return {
+      restrict:    'E',  // Element directive
+      templateUrl: "product-description.html"
+    };
+  });
 ```
 
-js/directives/appInfo.html
+### Directive with a controller in it
+
+index.html
 ```html
-<img class="icon" ng-src="{{ info.icon }}">
-<h2 class="title">{{ info.title }}</h2>
-<p class="developer">{{ info.developer }}</p>
-<p class="price">{{ info.price | currency }}</p>
+<product-tabs></product-tabs>
 ```
 
+js/directives/product-tabs.html
+```html
+<section>
+    <ul class="nav nav-pills">
+      <li ng-class="{ active:tab.isSet(1) }">
+        <a href ng-click="tab.setTab(1)">Description</a>
+      </li>
+      <li ng-class="{ active:tab.isSet(2) }">
+        <a href ng-click="tab.setTab(2)">Specs</a>
+      </li>
+      <li ng-class="{ active:tab.isSet(3) }">
+        <a href ng-click="tab.setTab(3)">Reviews</a>
+      </li>
+    </ul>
+
+    <!--  Description Tab's Content  -->
+    <div ng-show="tab.isSet(1)" ng-include="'product-description.html'">
+    </div>
+
+    <!--  Spec Tab's Content  -->
+    <div product-specs ng-show="tab.isSet(2)"></div>
+
+    <!--  Review Tab's Content  -->
+    <product-reviews ng-show="tab.isSet(3)"></product-reviews>
+</section>
+```
+
+js/directives/product-tabs.js
+```js
+  app.directive("productTabs", function() {
+    return {
+      restrict: 'E',
+      templateUrl: "product-tabs.html",
+
+      controller: function() {
+          this.tab = 1;
+
+          this.isSet = function(checkTab) {
+            return this.tab === checkTab;
+          };
+
+          this.setTab = function(setTab) {
+            this.tab = setTab;
+          };
+        },
+      controllerAs: "tab"
+    };
+  });
+```
 index.html
 ```html
 <div class="main" ng-controller="MainController">
@@ -241,6 +305,30 @@ index.html
 </div>
 ```
 
+js/directives/app-info.html
+```html
+<img class="icon" ng-src="{{ info.icon }}">
+<h2 class="title">{{ info.title }}</h2>
+<p class="developer">{{ info.developer }}</p>
+<p class="price">{{ info.price | currency }}</p>
+```
+
+js/app.js
+```js
+//...
+app.directive('appInfo', function() { // Creating a new directive appInfo
+  // Return a configuration object defining how our directive will work
+  return {
+    restrict: 'E',  // Type of directive: HTML element
+    scope: {
+      info: '=',    // Look for an attribute named info in the appInfo element
+    },
+    // Specifies the HTML to use in order to display the data in scope.info
+    templateUrl: 'app-info.html'
+  };
+});
+
+```
 ==
 
 ## Formatting with filters
