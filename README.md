@@ -4,8 +4,7 @@
 - [Code Academy](https://www.codecademy.com/en/courses/learn-angularjs)
 - [Code School](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
 - [AngularJS's tutorial - あなたとともにAngularJS](http://lab.hisasann.com/AngularJSTutorial/)
-- [AngularJSはWebサイトのテンプレートエンジンとしてだけ見てもなかなか使える](http://deerest.co/2015/05/12/angular-template/)
-- [AngularJSでHTMLを分割するのにお手軽なng-include](http://angularjsninja.com/blog/2013/11/19/angularjs-nginclude/)
+- [Creating A ReactJS-Inspired "Props" Object In AngularJS](http://www.bennadel.com/blog/2895-creating-a-reactjs-inspired-props-object-in-angularjs.htm)
 
 ==
 
@@ -27,41 +26,6 @@ app.js
  * [...]:   Dependencies (other libraries)
  */
 var app = angular.module("myApp", []);
-```
-
-==
-
-## Including the modules
-index.html
-```html
-<!doctype html>
-<html ng-app="myApp"><!-- booud to myApp -->
-  <head>
-    <!-- Include styles -->
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
-
-  <body>
-    <!-- Some page content -->
- 
-    <!-- Include AngularJS -->
-    <script type="text/javascript" src="angular.min.js"></script>
-    <!-- Include Modules -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- Include Controllers -->
-    <script type="text/javascript" src="js/controllers/MainController.js"></script>
-  </body>
-</html>
-```
-
-==
-
-## Expressions
-- https://docs.angularjs.org/guide/expression
-
-```html
-<h1>{{ "Hello, " + "Angular!" }}</h1>
 ```
 
 ==
