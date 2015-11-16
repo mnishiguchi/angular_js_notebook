@@ -18,15 +18,6 @@
 
       vm.products = data;  // Get data from API
 
-
-      // ---
-      // PUBLIC METHODS.
-      // ---
-
-      function doThat() {
-          console.log( "Do that (passed-in)!" );
-      }
-
   });
 
 
@@ -67,7 +58,7 @@
     function productGalleryController( $scope ) {
 
       var vm    = this;
-      var props = $scope.props = $scope;
+      var props = $scope.props = $scope;  // Alias for $scope
 
       // Current index of the gallery
       vm.current = 0;
@@ -85,23 +76,37 @@
     function productTabsDirective() {
 
       return {
-        restrict: 'E',
-        templateUrl: 'product-tabs.html',
-        controller: function(){
-          // Current position of the tabs, initially 1
-          this.tab = 1;
-
-          // Set the tab position
-          this.setTab = function(tab) {
-            this.tab = tab;
-          };
-
-          // Check if a tab is active
-          this.isSet = function(tab) {
-            return (this.tab === tab);
-          };
+        controller: "productTabsController",
+        controllerAs: "vm",
+        restrict: "E",
+        scope: {
+          product: "="
         },
-        controllerAs: 'tabs'
+        templateUrl: 'product-tabs.html'
+      };
+    }
+  );
+
+
+  angular.module( 'gemStore' ).controller(
+    "productTabsController",
+    function productTabsController( $scope ) {
+
+      var vm    = this;
+      var props = $scope.props = $scope;  // Alias for $scope
+
+      // State
+      // Hold the current position of the tabs, initially 1
+      vm.tab = 1;
+
+      // Set the tab position
+      vm.setTab = function(tab) {
+        vm.tab = tab;
+      };
+
+      // Check if a tab is active
+      vm.isSet = function(tab) {
+        return (vm.tab === tab);
       };
     }
   );
@@ -114,7 +119,10 @@
       return {
         controller: 'productReviewFormController',
         controllerAs: 'vm',
-        restrict: 'E',
+        restrict: "E",
+        scope: {
+          product: "="
+        },
         templateUrl: 'product-review-form.html',
       };
     }
@@ -126,7 +134,7 @@
     function productReviewFormController( $scope ) {
 
       var vm    = this;
-      var props = $scope.props = $scope;  // Alias for props
+      var props = $scope.props = $scope;  // Alias for $scope  // Alias for $scope
 
       // Current state of the review field
       vm.review = {}; // Bound to the fields
@@ -146,6 +154,10 @@
 
         product.reviews.push(vm.review);  // Add the review
         vm.review = {};                   // Clear the fields
+
+        // Reset the form's state
+        $scope.reviewForm.$setPristine();
+        $scope.reviewForm.$setUntouched();
       }
     }
   );

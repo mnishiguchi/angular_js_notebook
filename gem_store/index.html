@@ -22,9 +22,15 @@
       <div class="list-group-item"
            ng-repeat="product in vm.products">
 
-        <product-title></product-title>
-        <product-gallery></product-gallery>
-        <product-tabs></product-tabs>
+        <product-title>
+        </product-title>
+
+        <product-gallery>
+        </product-gallery>
+
+        <product-tabs
+          product="product">
+        </product-tabs>
 
       </div>
     </div>
