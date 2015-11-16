@@ -9,9 +9,9 @@ The myContentPane directive is required as a child.
   <!-- Tabs -->
   <ul class="nav nav-tabs">
 
-    <li ng-repeat="pane in panes" ng-class="{active:pane.selected}">
+    <li ng-repeat="pane in vm.panes" ng-class="{active:pane.selected}">
 
-      <a href="" ng-click="select(pane)">
+      <a href="" ng-click="vm.updateSelection(pane)">
         {{ pane.title }}
       </a>
 

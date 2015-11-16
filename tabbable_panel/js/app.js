@@ -9,7 +9,7 @@
 
   myApp.controller(
     "AppController",
-    function() {
+    function( $scope ) {
       // Empty.
     }
   );
@@ -19,6 +19,7 @@
   // --------------------------------------------------------------------------- //
 
 
+  //
   myApp.directive('myTabbablePanel', function() {
 
     return {
@@ -33,37 +34,45 @@
         var vm    = this;
         var props = $scope.props = $scope;  // Alias for $scope
 
-        // public
         // I hold the registered panes, initially [].
-        var panes = $scope.panes = [];
+        vm.panes = [];
 
-        // public
+        // Expose the public methods.
+        vm.updateSelection  = updateSelection;
+        vm.addPane          = addPane;
+
+
+        // ---
+        // PUBLIC METHODS.
+        // ---
+
+
         // I update the selected tab and pane.
-        $scope.select = function(pane) {
+        function updateSelection(pane) {
 
           // Set all the panes to the "not selected" state.
-          angular.forEach(panes, function(pane) {
+          angular.forEach(vm.panes, function(pane) {
             pane.selected = false;
           });
 
           // Set the specified pane to the "selected" state.
           pane.selected = true;
 
-        };
+        }
 
-        // private
+
         // I register a pane.
-        vm.addPane = function(pane) {
+        function addPane(pane) {
 
           // Select the first tab when the page is loaded.
-          if (panes.length === 0) {
-            $scope.select(pane);
+          if (vm.panes.length === 0) {
+            vm.updateSelection(pane);
           }
 
           // Add the specified pane to the list.
-          panes.push(pane);
+          vm.panes.push(pane);
 
-        };
+        }
 
       }] // end controller
     }; // end return
