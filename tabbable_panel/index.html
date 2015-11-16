@@ -20,17 +20,42 @@
     <!--
     The app
     -->
-    <my-tabs>
-      <my-pane title="Hello">
+
+    <my-tabbable-panel>
+
+      <my-content-pane title="Hello tab">
+
         <h4>Hello</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </my-pane>
-      <my-pane title="World">
+        <p>
+          Lorem ipsum dolor sit amet
+        </p>
+
+      </my-content-pane>
+
+
+      <my-content-pane title="World tab">
+
         <h4>World</h4>
         <em>Mauris elementum elementum enim at suscipit.</em>
-        <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
-      </my-pane>
-    </my-tabs>
+        <p>
+          <a href ng-click="i = i + 1">counter: {{ i || 0 }}</a>
+        </p>
+
+      </my-content-pane>
+
+
+      <my-content-pane title="3rd tab">
+
+        <h4>This is my 3rd tab</h4>
+        <em>Mauris elementum elementum enim at suscipit.</em>
+        <p>
+          <a href ng-click="i = i + 1">counter: {{ i || 0 }}</a>
+        </p>
+
+      </my-content-pane>
+
+
+    </my-tabbable-panel>
 
   </div>
 
