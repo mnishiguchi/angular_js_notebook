@@ -16,8 +16,8 @@
 
 
   myApp.directive(
-    "otSite",
-    function( MultiTranscludeFactory ) {
+    "siteLayout",
+    function( MultiTranscludeFn ) {
 
       return {
         scope: {},
@@ -25,7 +25,7 @@
         templateUrl: "site-layout.html",
 
         link: function(scope, iElem, iAttrs, ctrl, transcludeFn) {
-          MultiTranscludeFactory.call( iElem, transcludeFn );
+          MultiTranscludeFn.perform( iElem, transcludeFn );
         }
       };
 
@@ -34,11 +34,11 @@
 
 
   myApp.factory(
-    "MultiTranscludeFactory",
+    "MultiTranscludeFn",
     function() {
 
       return {
-        call: function(iElem, transcludeFn) {
+        perform: function(iElem, transcludeFn) {
 
           transcludeFn( function( clone ) {
 
@@ -50,15 +50,16 @@
               if (cloneEl.nodeType !== 3) {
 
                 // Get target name from clone
-                var destId = cloneEl.dataset.transcludeTo;
-
+                var destId = cloneEl.attributes["transclude-to"].value;
                 console.log("destId: " + destId);
                 console.log(iElem);
 
                 // Find target
-                var dest = iElem.find("[transclude-id='" + destId + "']");
+                var destAttr = "[transclude-id='" + destId + "']";
+                console.log("destAttr: " + destAttr);
+                var dest = iElem.find(destAttr);  // NOTE: Require jQuery
 
-                console.log(dest);
+                console.log("dest: " + dest);
 
                 // Append target if found
                 if (dest.length) {
