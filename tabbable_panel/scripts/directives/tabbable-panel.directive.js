@@ -1,32 +1,22 @@
 (function() {
 
-  var myApp = angular.module("myApp", []);
+  // This module contains the tabbableFrame and tabbableContentPane directives.
+  // Used to create a tabbable panel.
+  angular.module("tabbable", []);
 
 
   // --------------------------------------------------------------------------- //
   // --------------------------------------------------------------------------- //
 
 
-  myApp.controller(
-    "AppController",
-    function( $scope ) {
-      // Empty.
-    }
-  );
-
-
-  // --------------------------------------------------------------------------- //
-  // --------------------------------------------------------------------------- //
-
-
-  //
-  myApp.directive('myTabbablePanel', function() {
+  angular.module( "tabbable" ).
+  directive('tabbableFrame', function() {
 
     return {
       restrict: 'E',
       transclude: true,
       scope: {},
-      templateUrl: 'my-tabbable-panel.html',
+      templateUrl: 'views/tabbable-frame.html',
 
       controllerAs: "vm",
       controller: ['$scope', function( $scope ) {
@@ -38,8 +28,8 @@
         vm.panes = [];
 
         // Expose the public methods.
-        vm.updateSelection  = updateSelection;
-        vm.addPane          = addPane;
+        vm.updateSelection = updateSelection;
+        vm.addPane         = addPane;
 
 
         // ---
@@ -80,21 +70,22 @@
 
 
   //
-  myApp.directive('myContentPane', function() {
+  angular.module( "tabbable" )
+  .directive('tabbableContentPane', function() {
 
     return {
-      require: '^myTabbablePanel',  // Mix in myTabbablePanel directive's controller.
+      require: '^tabbableFrame',  // Mix in tabbableFrame directive's controller.
 
       restrict: 'E',
       transclude: true,
       scope: {
         title: '@'
       },
-      templateUrl: 'my-content-pane.html',
+      templateUrl: 'views/tabbable-content-pane.html',
 
       link: function(scope, element, attrs, tabsCtrl) {
 
-        // Call myTabbablePanel's addPane function.
+        // Call tabbableFrame's addPane function.
         tabsCtrl.addPane(scope);
 
       }
@@ -102,9 +93,9 @@
 
     // NOTE: When a directive requires a controller, its link function receives
     // that controller as the fourth argument of its link function.
-    // Taking advantage of this, myContentPane can call the addPane function of myTabbablePanel.
+    // Taking advantage of this, tabbableContentPane can call the addPane function of tabbableFrame.
 
   });
 
-})();
 
+})();

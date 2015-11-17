@@ -1,9 +1,10 @@
 # Tabbable panel
 - Based on https://docs.angularjs.org/guide/directive
-- Creating a reusable component that enables us to add tabbable panels
-- A component that's built from a combination of directives.
-- A container with tabs in which the contents of the container correspond to which tab is active.
+- Demo: http://tabbable-panel-mnishiguchi.bitballoon.com/
 
+## About
+- A reusable component that enables us to add tabbable panels.
+- Performs transclude twice in order to embed the content into the pre-defined template.
 
-
-
+## Issues
+- Everytime the page is loaded, the order of the tags changes for unknown reasons.
