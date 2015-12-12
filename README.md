@@ -88,6 +88,9 @@ index.html
 <div ng-include src="'top-navbar.html'"></div>
 ```
 
+### ngClass
+- https://scotch.io/tutorials/the-many-ways-to-use-ngclass
+
 ### ng-repeat
 
 E.g. Arrays of objects
@@ -311,6 +314,9 @@ app.directive('appInfo', function() { // Creating a new directive appInfo
 <p class="price">{{ product.price | currency }} </p>
 <p class="date">{{ product.pubdate | date }}</p>
 ```
+
+==
+
 
 ==
 
