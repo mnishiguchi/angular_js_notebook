@@ -317,6 +317,3 @@ app.directive('appInfo', function() { // Creating a new directive appInfo
 
 ==
 
-
-==
-
